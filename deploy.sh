@@ -89,4 +89,5 @@ sam deploy --stack-name ${STACK_NAME} \
   --parameter-overrides pEnv=$ENV pGitHubAccessToken=$GITHUB_TOKEN pQuerypalAppName=$QUERYPAL_AMPLIFY_NAME \
   --capabilities "CAPABILITY_NAMED_IAM" \
   --no-fail-on-empty-changeset
+  -rollback-configuration "RollbackTriggers=[]"
 
